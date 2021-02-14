@@ -137,7 +137,7 @@ const changeSlide = (index) => {
   if (index >= items.length) {
     index = 0;
     slideIndex = 0;
-  }
+  } 
 
   items.forEach(item => {
     item.style.display = "none"

@@ -1,4 +1,8 @@
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 #sliders {
   height: 400px;
   width: 60%;
@@ -70,12 +74,8 @@ img {
   display: none;
 
 }
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
+
 .center{
   position: absolute;
   top: 45%;
@@ -119,10 +119,10 @@ img {
   width: 100%;
   left: 50%;
   transform: translateX(-47%);
-  bottom: -30px;
+  
   font-size: 30px;
   font-weight: 700;
-  color:blue;
+  color:magenta;
   font-family: 'Poppins', sans-serif;
   display: none;
 }
@@ -144,6 +144,7 @@ img {
 .stars #one:checked ~ .result:before{
   content: "I hate it 😠";
 }
+
 
 
 
