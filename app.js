@@ -158,6 +158,10 @@ nextPageBtn.addEventListener('click',function(){
   document.getElementById('main').style.display='none';
   document.getElementById('review').style.display='block';
 })
+document.getElementById('submit-btn').addEventListener('click',function(){
+  document.getElementById('review').style.display='none';
+  
+})
 
 
 sliderBtn.addEventListener('click', function () {
