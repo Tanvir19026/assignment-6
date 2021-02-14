@@ -90,7 +90,7 @@ const createSlider = () => {
   `;
 
   sliderContainer.appendChild(prevNext)
-  document.querySelector('.main').style.display = 'block';
+ 
   // hide image aria
   imagesArea.style.display = 'none';
   const duration = document.getElementById('duration').value;
@@ -102,6 +102,7 @@ const createSlider = () => {
   }
   else{
     sliders.forEach(slide => {
+      document.querySelector('.main').style.display = 'block';
       let item = document.createElement('div')
       item.className = "slider-item";
       item.innerHTML = `<img class="w-100"
