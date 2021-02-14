@@ -4,6 +4,7 @@ const galleryHeader = document.querySelector('.gallery-header');
 const searchBtn = document.getElementById('search-btn');
 const sliderBtn = document.getElementById('create-slider');
 const sliderContainer = document.getElementById('sliders');
+const nextPageBtn=document.getElementById('nextpage-btn');
 // selected image 
 let sliders = [];
 
@@ -93,7 +94,7 @@ const createSlider = () => {
   // hide image aria
   imagesArea.style.display = 'none';
   const duration = document.getElementById('duration').value;
-  if(duration<0)
+  if(duration<=0)
   {
     
     alert("Slide show on the screen only for positive duration...");
@@ -153,12 +154,18 @@ searchBtn.addEventListener('click', function () {
   sliders.length = 0;
 })
 
+nextPageBtn.addEventListener('click',function(){
+  document.getElementById('main').style.display='none';
+  document.getElementById('review').style.display='block';
+})
+
+
 sliderBtn.addEventListener('click', function () {
   createSlider()
 })
 
 
-//for bonus toggle use..
+//for bonus = spinner used..
 
 const toggleSpinner=()=>{  //show 
   const spinner=document.getElementById("loading-spinner");
